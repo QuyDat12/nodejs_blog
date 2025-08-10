@@ -1,13 +1,12 @@
+class SiteController {
+  // [get] /home
+  index(req, res) {
+    res.render('home');
+  }
 
-class SiteController{
-    // [get] /home
-    index (req, res) {
-        res.render('home');
-    }
-
-    // [Get] /search
-    search(req, res){
-        res.render('search');
-    }
+  // [Get] /search
+  search(req, res) {
+    res.render('search');
+  }
 }
-module.exports = new SiteController; // xuat ra ngoai
+module.exports = new SiteController(); // xuat ra ngoai

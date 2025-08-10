@@ -1,13 +1,12 @@
+class NewsController {
+  // [get] /news
+  index(req, res) {
+    res.render('news');
+  }
 
-class NewsController{
-    // [get] /news
-    index (req, res) {
-        res.render('news');
-    }
-
-    // [Get] /news/:slug
-    show(req, res){
-        res.send(' Day la noi dung tin tuc');
-    }
+  // [Get] /news/:slug
+  show(req, res) {
+    res.send(' Day la noi dung tin tuc');
+  }
 }
-module.exports = new NewsController; // xuat ra ngoai
+module.exports = new NewsController(); // xuat ra ngoai
